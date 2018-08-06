@@ -1,0 +1,23 @@
+{
+  "name": "learning-vue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cdkirkwood/learning-vue.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cdkirkwood/learning-vue/issues"
+  },
+  "homepage": "https://github.com/cdkirkwood/learning-vue#readme",
+  "dependencies": {
+    "eslint": "^5.3.0",
+    "eslint-plugin-vue": "^4.7.1"
+  }
+}
