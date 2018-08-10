@@ -18,6 +18,7 @@
   "homepage": "https://github.com/cdkirkwood/learning-vue#readme",
   "dependencies": {
     "eslint": "^5.3.0",
-    "eslint-plugin-vue": "^4.7.1"
+    "eslint-plugin-vue": "^4.7.1",
+    "vue": "^2.5.17"
   }
 }
