@@ -70,8 +70,5 @@ new Vue({
       }
       return false
     }
-  },
-  computed: {
-    
   }
 });
