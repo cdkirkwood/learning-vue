@@ -1,13 +1,12 @@
 <template>
-  <div>
+  <li @click="selectServer(server)">
     <p>Server #{{ server.id }}</p>
-    <p>Status: {{ server.status }}</p>
-  </div>
+  </li>
 </template>
 
 <script>
 export default {
-  props: ['server']
+  props: ['server', 'selectServer']
 }
 </script>
 

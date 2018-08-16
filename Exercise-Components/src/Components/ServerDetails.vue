@@ -1,26 +1,29 @@
 <template>
   <div class="col-xs-12 col-sm-6" v-if="!selectedServer">
-      <p>Server Details are currently not updated</p>
+      <p>Please Select a Server</p>
   </div>
   <div class="col-xs-12 col-sm-6" v-else>
-      <SingleServer :server="selectedServer" />
+      <p>Server # {{ selectedServer.id }}</p>
+      <p>Status {{ selectedServer.status }}</p>
+      <button @click="statusToNormal">Change Status</button>
   </div>
 </template>
 
 <script>
 import { eventBus } from '../main'
-import SingleServer from './SingleServer.vue'
 export default {
   data: () => ({
     selectedServer: null
   }),
+  methods: {
+    statusToNormal() {
+      this.selectedServer.status = 'Normal'
+    }
+  },
   created() {
     eventBus.$on('newServerSelected', server => {
       this.selectedServer = server
     })
-  },
-  components: {
-    SingleServer
   }
 }
 </script>
